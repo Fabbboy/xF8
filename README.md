@@ -28,6 +28,19 @@ make
 ./xF8
 ```
 
-## Further usages
-Edit main.cpp or look at the code
+## Example
+The CPP code in main.cpp:
+```cpp
+    reg.write(eax, 'a');
+    mem.write(0x0000, reg.read(eax));
+    mem.write(0x0001, mem.read(0x0000));
+    std::cout << mem.read(0x0001) << std::endl;
+```
+Corresponding xF8 Assembly code:
+```
+    mov: eax, 'a';
+    mov: [0x0000], eax;
+    mov: [0x0001], [0x0000];
+    print: [0x0001];
+```
 
