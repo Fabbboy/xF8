@@ -21,6 +21,7 @@ void Memory::write(uint16_t address, uint8_t value) {
 
 void Memory::mapMemory() {
     for (int i = 0; i < size; i++) {
-        std::cout << "Memory location " << i << ": " << memory[i] << std::endl;
+        //print location: value. For example: 0x0000: 0x0A
+        std::cout << "Location: " << i << ": " << memory[i] << std::endl;
     }
 }

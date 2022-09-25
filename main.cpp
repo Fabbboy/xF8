@@ -4,17 +4,20 @@
 
 int main() {
 
-    Memory mem(0x0005);
+    Memory mem(5);
     Registers reg;
 
-    //load value A into register eax
-    reg.write(eax, 'a');
-    //write register eax to memory location 0x0000
+    reg.write(eax, 'h');
     mem.write(0x0000, reg.read(eax));
-    //load memory location 0x0000 into memory location 0x0001
-    mem.write(0x0001, mem.read(0x0000));
-    //get memory location 0x0001 and print it
-    std::cout << mem.read(0x0001) << std::endl;
+    reg.write(eax, 'e');
+    mem.write(0x0001, reg.read(eax));
+    reg.write(eax, 'l');
+    mem.write(0x0002, reg.read(eax));
+    reg.write(eax, 'l');
+    mem.write(0x0003, reg.read(eax));
+    reg.write(eax, 'o');
+    mem.write(0x0004, reg.read(eax));
+
 
     reg.mapRegisters();
     mem.mapMemory();
