@@ -29,7 +29,7 @@ make
 ```
 
 ## Example
-1. Load value in and from Registers
+**1. Load value in and from Registers**
 ```cpp
     reg.write(eax, 'a');
     mem.write(0x0000, reg.read(eax));
@@ -59,7 +59,7 @@ make
     Location: 3: �
     Location: 4: �
 ```
-2. Hello example
+**2. Hello example**
 ```cpp
     reg.write(eax, 'h');
     mem.write(0x0000, reg.read(eax));
@@ -101,7 +101,7 @@ make
     Location: 3: l
     Location: 4: o
 ```
-3. Using multiple registers
+**3. Using multiple registers**
 ```cpp
         reg.write(eax, 'h');
         reg.write(ebx, 'e');
