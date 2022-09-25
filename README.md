@@ -36,7 +36,7 @@ make
     mem.write(0x0001, mem.read(0x0000));
     std::cout << mem.read(0x0001) << std::endl;
 ```
-    Corresponding xF8 Assembly code:
+   Corresponding xF8 Assembly code:
 ```
     mov: eax, 'a';
     mov: [0x0000], eax;
@@ -72,7 +72,7 @@ make
     reg.write(eax, 'o');
     mem.write(0x0004, reg.read(eax));
 ```
-    Corresponding xF8 Assembly code:
+   Corresponding xF8 Assembly code:
 ```
     mov: eax, 'h';
     mov: [0x0000], eax;
