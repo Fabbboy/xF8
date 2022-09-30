@@ -4,4 +4,4 @@ cmp: eax, ebx # this compares the value in the eax register to the value in the 
 jne: rnd # if the values are not equal, the program will jump to the rnd label and generate a new random number #
 mov: eax, ebx # if the values are equal, the value in the ebx register is moved to the eax register #
 call: print, eax # the value in the eax register is passed to the print function #
-end: 0 # the program ends with code 0#
+end: 0 # the program ends with code 0 #

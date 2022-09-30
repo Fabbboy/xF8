@@ -72,5 +72,4 @@ div ebx ; 0xf7 0xfb. 0xf7 = div, 0xfb = ebx
 
 ; 0x01 = Add register to register
 ; 0x29 = Subtract register from register
-; 0xf7 = Multiply or divide register by register
 
